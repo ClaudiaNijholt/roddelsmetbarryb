@@ -1,18 +1,13 @@
 <?php
     include ("./connect_db.php");
     
-    $id = $_POST["id"];
-    $firstname = $_POST["firstname"];
-    $infix = $_POST["infix"];
-    $lastname = $_POST["lastname"];
-    $betaalrekening = $_POST["betaalrekening"];
+    $title = $_POST["title"];
+    $rumor = $_POST["rumor"];
 
-    $sql = "UPDATE `users` 
-            SET `firstname` = '$firstname',
-                `infix` = '$infix',
-                `lastname` = '$lastname',
-                `betaalrekening` = '$betaalrekening'
-            WHERE `users`.`id` = '$id';";
+    $sql = "UPDATE `register` 
+            SET `title` = '$title',
+                `rumor` = '$rumor',
+            WHERE `register`.`id` = '$id';";
 
     mysqli_query($conn, $sql);
     

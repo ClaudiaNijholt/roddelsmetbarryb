@@ -11,14 +11,14 @@
         <h2>Een post plaatsen</h2>
     </div>
     <div class="row">    
-        <form action="./index.php?content=login_script" method="post">
+        <form action="./index.php?content=create" method="post">
             <div>
                 <label for="InputTitle"><h3>Titel:</h3></label>
                 <input name="title" type="title" id="InputTitle" aria-describedby="titleHelp" autofocus>
             </div>
             <div>
                 <label for="InputRumor"><h3>Roddel:</h3></label>
-                <input name="rumor" type="rumor"id="InputRumor" aria-describedby="rumorHelpCheck">
+                <input name="rumor" type="rumor" id="InputRumor" aria-describedby="rumorHelpCheck">
                 <div id="rumorHelp">Alle anderen mensen op deze site kunnen niet wachten om je roddel te lezen.</div>
             </div>
             <div>

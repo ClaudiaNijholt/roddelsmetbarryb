@@ -62,9 +62,9 @@
                                                 
                                                 $headers = "MIME-version: 1.0\r\n";
                                                 $headers = "Content-type: text/html; charset=UTF-8\r\n";
-                                                $headers .= "From: admin@juicynoodles.com\r\n";
-                                                $headers .="Cc: moderator@juicynoodles.com\r\n";
-                                                $headers .="Bcc: root@juicynoodles.com";
+                                                $headers .= "From: admin@rmbb.com\r\n";
+                                                $headers .="Cc: moderator@rmbb.com\r\n";
+                                                $headers .="Bcc: root@rmbb.com";
                                                 mail($to, $subject, $message, $headers);
 
                 header("location: ./index.php?content=message&alert=register-success");

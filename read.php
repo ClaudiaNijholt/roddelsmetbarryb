@@ -1,6 +1,6 @@
 <?php
     include("./connect_db.php");
-    $sql = "SELECT * FROM `users`";
+    $sql = "SELECT * FROM `register`";
 
     $result = mysqli_query($conn, $sql);
 
