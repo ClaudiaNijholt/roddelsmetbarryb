@@ -1,22 +1,16 @@
 <?php
     include("./connect_db.php");
 
-    $firstname = $_POST["firstname"];
-    $infix = mysqli_real_escape_string ($conn, $_POST["infix"]);
-    $lastname = $_POST["lastname"];
-    $betaalrekening = $_POST["betaalrekening"];
+    $title = $_POST["title"];
+    $betaalrekening = $_POST["rumor"];
     
     
-$sql = "INSERT INTO `users` (
-                     `firstname`,
-                     `infix`,
-                     `lastname`,
-                     `betaalrekening`)
+$sql = "INSERT INTO `register` (
+                     `title`,
+                     `rumor`)
       VALUES              (
-                     '$firstname',
-                     '$infix',
-                     '$lastname',
-                     '$betaalrekening');";
+                     '$title',
+                     '$rumor');";
 ?>
 <!doctype html>
 <html>

@@ -17,11 +17,6 @@
                 <input name="title" type="title" id="InputTitle" aria-describedby="titleHelp" autofocus>
             </div>
             <div>
-                <label for="InputPassword"><h3>Foto:</h3></label>
-                <input name="password" type="password"id="InputPassword" aria-describedby="passwordHelpCheck">
-                <div id="passwordHelp">Kies een foto die bij je roddel past.</div>
-            </div>
-            <div>
                 <label for="InputRumor"><h3>Roddel:</h3></label>
                 <input name="rumor" type="rumor"id="InputRumor" aria-describedby="rumorHelpCheck">
                 <div id="rumorHelp">Alle anderen mensen op deze site kunnen niet wachten om je roddel te lezen.</div>
