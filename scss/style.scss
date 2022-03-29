@@ -1,0 +1,240 @@
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+nav {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0rem;
+  left: 0rem;
+  width: 100%;
+  z-index: 1;
+  padding: 0.5rem;
+  margin-bottom: 5rem;
+  ul {
+    text-align: start;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    li img {
+      display: block;
+      width: 5rem;
+      height: 3rem;
+      float: none;
+      position: absolute;
+      top: 2rem;
+      left: 42.5rem;
+      transform: translate(-50%, -50%);
+    }
+    li {
+      display: inline;
+      font-family: "Fira Sans", sans-serif;
+      font-size: 1rem;
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.container {
+  margin-top: 2rem;
+}
+.li-right {
+  float: right;
+}
+
+.content {
+  background-color: white;
+}
+
+input,
+button {
+  font-size: 1em;
+  padding: 1em;
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+button {
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: #363968;
+  color: #ffffff;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:100,100i,300,300i,400,400i,600,600i,700,700i');
+
+
+:root{
+  --title: #ed612a;
+  --para-text: rgba(0,0,0,0.67);
+  --width: 20em;
+}
+body{
+  place-items: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+  color: var(--title);
+  text-transform: capitalize;
+  font-family: var(--title);
+}
+
+#section-card,
+aside,
+article,
+div,
+img{
+  box-sizing: border-box;
+}
+#section-card img{
+  width: 100%;
+}
+#section-card{
+  width: var(--width);
+  background: #fff;
+  padding: 20px;
+}
+#section-card h3{
+  font-size: calc(var(--width)/10);
+}
+#section-card p{
+  font-family: var(--text);
+  color: var(--para-text);
+  font-size: calc(var(--width)/20);
+}
+.date{
+  font-size: calc(var(--width)/25);
+}
+h1{
+  color: #fff;
+}
+
+#section-card a{
+  text-decoration: none;
+  color: var(--bg);
+  font-family: var(--title);
+  font-weight: 700;
+  font-size: calc(var(--width)/23);
+}
+
+.side-menu {
+  display: flex;
+  height: 20rem;
+  background-color: #ddd;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  h3{
+    text-align: center;
+  }
+  .link-deco{
+    text-decoration: none;
+    list-style-type: none;
+  }
+}
+
+.dashboard {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+footer {
+  background-color: #535353;
+  color: #a7a7a7;
+  font-size: 1rem;
+  body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+  }
+  footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  .rowf-footer {
+    padding: 1em 1em;
+  }
+  .rowf-primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  h3 {
+    width: 100%;
+    text-align: left;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  li:not(:first-child) {
+    margin-top: 0.8em;
+  }
+  ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #ed612a;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+
+  .copyright {
+    padding: 0.3em 1em;
+    background-color: #25262e;
+  }
+  .footer-menu {
+    float: left;
+    margin-top: 10px;
+  }
+
+  .footer-menu a {
+    color: #cfd2d6;
+    padding: 6px;
+
+    text-decoration: none;
+  }
+  .footer-menu a:hover {
+    color: #ed612a;
+  }
+  .copyright p {
+    font-size: 0.9em;
+    text-align: right;
+  }
+  @media screen and (max-width: 850px) {
+    .rowf-primary {
+      grid-template-columns: 1fr;
+    }
+  }
+}

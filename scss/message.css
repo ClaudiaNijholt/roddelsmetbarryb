@@ -1,0 +1,30 @@
+.alert {
+  font-size: 1em;
+  padding: 1em 0 1em 0;
+  width: 50rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.alert-info {
+  background-color: #a9a9fd;
+  color: #6868ff;
+}
+
+.alert-warning {
+  background-color: #ffcca9;
+  color: #ffa162;
+}
+
+.alert-danger {
+  background-color: #ffc7c7;
+  color: #ff8c8c;
+}
+
+.alert-success {
+  background-color: #bcffbf;
+  color: #5cc762;
+}
+/*# sourceMappingURL=message.css.map */

@@ -1,0 +1,29 @@
+.alert {
+  font-size: 1em;
+  padding: 1em 0 1em 0;
+  width:50rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.alert-info {
+    background-color: rgb(169, 169, 253);
+    color: rgb(104, 104, 255);
+}
+
+.alert-warning {
+    background-color: rgb(255, 204, 169);
+    color: rgb(255, 161, 98);
+}
+
+.alert-danger {
+    background-color: rgb(255, 199, 199);
+    color: rgb(255, 140, 140);
+}
+
+.alert-success {
+    background-color: rgb(188, 255, 191);
+    color: rgb(92, 199, 98);
+}
