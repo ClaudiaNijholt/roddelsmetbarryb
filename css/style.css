@@ -1,6 +1,137 @@
 #footer {
     min-height: 3em;
-    background-color: khaki;
+    background-color: #2f2fa2;
     padding: 1em;
     text-align: center;
 }
+
+.super-container {
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    height: 100%;
+  }
+  
+  
+  
+  
+  .carousel-container {
+    max-width: 90%;
+    position: relative;
+    margin: auto;
+    height: 100%;
+    max-height: 30%;
+    overflow: hidden;
+  }
+  
+  
+  .myCarousel {
+    display: none;
+    height: 100%;
+  }
+  
+  .myCarousel img {
+    width: 100%;
+    margin-top: 0%;
+  }
+  
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background: #0000008c;
+    line-height: 30px;
+  }
+  
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 12px 20px;
+    position: absolute;
+    top: 0;
+    background: #000000ba;
+  }
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active,
+  .dot:hover {
+    background-color: #3f3f3f;
+  }
+  
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
